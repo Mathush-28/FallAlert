@@ -1,30 +1,16 @@
-#*.iml
-#.gradle
-#/local.properties
-#/.idea/caches
-#/.idea/libraries
-#/.idea/modules.xml
-#/.idea/workspace.xml
-#/.idea/navEditor.xml
-#/.idea/assetWizardSettings.xml
-#.DS_Store
-#/build
-#/captures
-#.externalNativeBuild
-#.cxx
-#local.properties
-
-
 # Ignore Android Studio project files
 *.iml
-.gradle
-/local.properties
+.gradle/
+local.properties
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
 # macOS
 .DS_Store
@@ -32,8 +18,9 @@
 # Ignore build output
 /build
 /captures
-.externalNativeBuild
-.cxx
+.externalNativeBuild/
+.cxx/
+output.json
 
 # Ignore local configuration file (sdk path, etc)
 local.properties
@@ -62,25 +49,13 @@ proguard/
 
 # Keystore files
 *.jks
+*.keystore
 
 # Google Services (unless you explicitly intend to include it)
 google-services.json
 
+# Android Profiling
+*.hprof
+
 # Other files
-*.orig
-*.rej
-*.swp
-*.swo
-*.tmp
-*.bak
-*.backup
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Android Jetpack Compose
-.idea/
-.gradle/
-build/
+*.ori
