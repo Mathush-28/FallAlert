@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Permission to send SMS  -->
-<!--    <uses-permission android:name="android.permission.SEND_SMS"/>-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <!-- Permissions for accessing sensors -->
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />

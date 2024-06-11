@@ -14,20 +14,20 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
-            android:text="CONTACT"
-            android:icon="@drawable/baseline_contact_phone_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <com.google.android.material.tabs.TabItem
             android:text="HOME"
             android:icon="@drawable/baseline_add_home_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <com.google.android.material.tabs.TabItem
+            android:text="DETECT FALL"
+            android:icon="@drawable/baseline_edgesensor_high_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
             android:text="SETTINGS"
-            android:icon="@drawable/twotone_app_settings_alt_24"
+            android:icon="@drawable/baseline_handyman_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

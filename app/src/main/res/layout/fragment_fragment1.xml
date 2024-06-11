@@ -7,15 +7,74 @@
     android:layout_height="match_parent"
     tools:context=".fragment1">
 
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="370dp"
-        android:textSize="30sp"
-        android:text="frag1"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/fall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="-120dp"
+        android:textColor="#800080"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="\nThis app provides you.."
+        android:textColor="#800080"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/greetings" />
+
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="\n• Fall detection\n• SMS Alert function\n• Easy settings\n• Interactive design"
+        android:textColor="#00CED1"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_horizontal"
+        android:text="Swipe Left to begin"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/points" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
