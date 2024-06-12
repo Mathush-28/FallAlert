@@ -2,7 +2,6 @@
 package com.example.fallalert;
 
 
-
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -41,8 +40,6 @@ public class fragment2 extends Fragment implements SensorEventListener {
     private SensorManager sensorManager;
     private Sensor accelerometer;
     private Sensor gyroscope;
-
-
     private float[] accelerationValues = new float[3];
     private float[] gyroscopeValues = new float[3];
 
@@ -56,7 +53,7 @@ public class fragment2 extends Fragment implements SensorEventListener {
     private static final float MIN_FALL_THRESHOLD = 12.0f;
     private static final float MAX_FALL_THRESHOLD = 16.0f;
     private static final float DEFAULT_FALL_THRESHOLD = 14.0f;
-    private static final float GYRO_THRESHOLD = 10.0f;
+    private static final float GYRO_THRESHOLD = 100.0f;
     private static final float STOP_THRESHOLD = 9.9f; // Threshold for detecting a sudden stop
     private static final int STOP_TIME_WINDOW_MS = 1000; // Time window to detect a stop in milliseconds
     private float fallThreshold = DEFAULT_FALL_THRESHOLD; // Default sensitivity value
@@ -219,7 +216,7 @@ public class fragment2 extends Fragment implements SensorEventListener {
 
             // Calculate the SMV
             float smv = (float) Math.sqrt(
-                    accelerationValues[0] * accelerationValues[0] +
+                            accelerationValues[0] * accelerationValues[0] +
                             accelerationValues[1] * accelerationValues[1] +
                             accelerationValues[2] * accelerationValues[2]
             );
@@ -255,7 +252,7 @@ public class fragment2 extends Fragment implements SensorEventListener {
 
             // Calculate the angular velocity magnitude
             float angularVelocity = (float) Math.sqrt(
-                    gyroscopeValues[0] * gyroscopeValues[0] +
+                            gyroscopeValues[0] * gyroscopeValues[0] +
                             gyroscopeValues[1] * gyroscopeValues[1] +
                             gyroscopeValues[2] * gyroscopeValues[2]
             );
@@ -276,7 +273,6 @@ public class fragment2 extends Fragment implements SensorEventListener {
                 }
             }
         }
-
     }
 
     private void handleFall() {
